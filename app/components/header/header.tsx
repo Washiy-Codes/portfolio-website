@@ -1,4 +1,5 @@
 import { homePath } from '@/app/paths'
+import { Button } from '@/components/ui/button'
 import { LucideHouse } from 'lucide-react'
 import Link from 'next/dist/client/link'
 
@@ -9,6 +10,11 @@ const Header = () => {
               <LucideHouse className="h-5 w-5 shrink-0" />
                   <span>Home</span>
              </Link>
+            <Button variant="default">
+              <Link href="/contact" className="flex items-center justify-start gap-3 w-full px-2">
+                  <span>Contact</span>
+              </Link>
+            </Button>
             </div>
   )
 }
